@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical symposium</title>
+    <title>INGENIOUS'21</title>
 
 
 
@@ -15,7 +15,7 @@
 </head>
 <style>
     header {
-        background: url(imgs/header.jpg);
+        background: url(imgs/header.png);
         background-color: black;
         background-size: cover;
         background-position: center;
@@ -28,6 +28,10 @@
         margin-top: 300px;
     }
 
+    .img-overlay{
+        height: 800px,
+    }
+
     @media screen and (max-width: 670px) {
         header {
             min-height: 500px;
@@ -37,10 +41,21 @@
             margin-top: 100px;
         }
     }
+
+    #events .event-headers{
+
+    }
+
+    .tabs .tab a:hover{
+        
+        
+          text-decoration: underline;
+
+    }
 </style>
 
 <body>
-
+<!--Author: Keshav SR-->
     <header>
         <nav class="nav-wrapper transparent z-depth-0">
             <div class="container">
@@ -70,25 +85,24 @@
 
 
         <div class="container center header-txt">
-            <h1 class="white-text center"> Welcome to <strong>INGENIOUS 2K21</strong></h1>
-            <h5 class="center white-text">Flagship Technical Symposium Of Rec...!!
-
-            </h5>
+            <h1 class="white-text center"> WELCOME TO INGENIOUS’21</h1>
+            <h5 class="center white-text"><strong>NATIONAL LEVEL TECHNICAL SYMPOSIUM </strong></h5>
+            <h3 class = "center white-text">GET IGNITED ! </h3>
         </div>
     </header>
 
     <!-- Heading -->
     <div class="container" id="events">
-        <h2 class="center">Events</h2>
+        <h3 class="center event-headers">EVENTS</h3>
     </div>
     <!-- events Tabs -->
 
     <section class="container section">
-            <div class="row container">
+            <div class="row">
                 <div class="col s12 ">
                     <ul class="tabs ">
-                        <li class="tab col l4 s3"><a href="">Technical</a></li>
-                        <li class="tab col l4 s3"><a href="">non-Technical</a></li>
+                        <li class="tab col l7 s3"><a href="" class = " black-text tab-link">Technical</a></li>
+                        <li class="tab col l3 s3"><a href="" class = " black-text tab-link">non-Technical</a></li>
 
                     </ul>
                 </div>
