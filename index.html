@@ -5,65 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mechanical symposium</title>
 
-          
 
-       
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
+<style>
+    header {
+        background: url(imgs/header.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 800px;
+
+    }
+
+     header .header-txt{
+        height: 300px;
+        margin-top: 300px;
+    } 
+    @media screen and (max-width: 670px) {
+        header {
+            min-height: 500px;
+        }
+        header .header-txt{
+            margin-top: 100px;
+        }
+    }
+</style>
 
 <body>
 
     <header>
-    <nav class = "nav-wrapper blue z-depth-0">
-        <div class = "container">
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-              <i class="material-icons ">menu</i>
-              </a>
-        <ul class="right hide-on-med-and-down">
-         <li> 
-            <a class='dropdown-trigger transparent' href='#' data-target='dropdown1'> Techincal</a>
-         </li>
+        <nav class="nav-wrapper transparent z-depth-0">
+            <div class="container">
+                <a href="#" class="brand-logo">
+                    <img src="imgs/Inginous.png.png" width="200" height="50" alt="" class="responsive-img">
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                  </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a class='transparent' href='#events''> Events</a>
+                    </li>
+                    <li>
+                        <a class='dropdown-trigger transparent' href='#' data-target='dropdown2'> Register</a>
+                    </li>
 
-         <ul class="right hide-on-med-and-down">
-         <li> 
-            <a class='dropdown-trigger transparent' href='#' data-target='dropdown2'> non-Techincal</a>
-         </li>
+                </ul>
 
-     </ul>    
-         <!--DD Contents--> 
-             <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li><a href="#!">three</a></li>
-             </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Photo's</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
 
-              <ul id='dropdown2' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li><a href="#!">three</a></li>
-             </ul>
-            <!-- DDC end-->
+            </div>
+        </nav>
+        
+
+        <div class="container center header-txt">
+            <h1 class="white-text center"> Welcome to <strong>INGENIOUS 2K21</strong></h1>
+            <h5 class="center white-text">Flagship Technical Symposium Of Rec...!!
+
+            </h5>
         </div>
-    </nav>
-
     </header>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Heading -->
+    <div class="container" id="events">
+        <h2 class="center">Events</h2>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
- </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
     <script>
-    $(document).ready(function(){
-          $('.dropdown-trigger').dropdown();
+        $(document).ready(function () {
+            $('.dropdown-trigger').dropdown();
+            $('.sidenav').sidenav();
 
-    })
+
+        })
     </script>
 
 </body>
- 
- <!--git remote add origin https://github.com/KESHAVBERG/mechSymposium.git-->
+
+<!--git remote add origin https://github.com/KESHAVBERG/mechSymposium.git-->
 <!-- git branch -M main
 git push -u origin main -->
