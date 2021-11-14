@@ -16,21 +16,24 @@
 <style>
     header {
         background: url(imgs/header.jpg);
+        background-color: black;
         background-size: cover;
         background-position: center;
         min-height: 800px;
 
     }
 
-     header .header-txt{
+    header .header-txt {
         height: 300px;
         margin-top: 300px;
-    } 
+    }
+
     @media screen and (max-width: 670px) {
         header {
             min-height: 500px;
         }
-        header .header-txt{
+
+        header .header-txt {
             margin-top: 100px;
         }
     }
@@ -46,26 +49,25 @@
                 </a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-menu">
                     <i class="material-icons">menu</i>
-                  </a>
+                </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a class='transparent' href='#events''> Events</a>
+                        <a class='' href='#events''> Events</a>
                     </li>
                     <li>
-                        <a class='dropdown-trigger transparent' href='#' data-target='dropdown2'> Register</a>
+                        <a class='' href=' #' data-target='dropdown2'> Register</a>
                     </li>
 
                 </ul>
 
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#">Photo's</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+                    <li><a class='transparent' href='#events''> Events</a></li>
+                    <li> <a class=' dropdown-trigger transparent' href='#' data-target='dropdown2'> Register</a></li>
+                </ul>
 
             </div>
         </nav>
-        
+
 
         <div class="container center header-txt">
             <h1 class="white-text center"> Welcome to <strong>INGENIOUS 2K21</strong></h1>
@@ -79,13 +81,26 @@
     <div class="container" id="events">
         <h2 class="center">Events</h2>
     </div>
+    <!-- events Tabs -->
+
+    <section class="container section">
+            <div class="row container">
+                <div class="col s12 ">
+                    <ul class="tabs ">
+                        <li class="tab col l4 s3"><a href="">Technical</a></li>
+                        <li class="tab col l4 s3"><a href="">non-Technical</a></li>
+
+                    </ul>
+                </div>
+            </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
     <script>
         $(document).ready(function () {
-            $('.dropdown-trigger').dropdown();
             $('.sidenav').sidenav();
 
 
