@@ -46,12 +46,21 @@
 
     }
 
-    .tabs .tab a:hover{
-        
-        
-          text-decoration: underline;
+    .tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: black;
+    will-change: left, right;
+}
 
-    }
+.tab-list-text{
+    font-size:20px;
+    color:black;
+}
+.imgcontainer{
+    margin-top:10px
+}
 </style>
 
 <body>
@@ -95,18 +104,65 @@
     <div class="container" id="events">
         <h3 class="center event-headers">EVENTS</h3>
     </div>
-    <!-- events Tabs -->
+
+   
+    <!--Technical Events -->
 
     <section class="container section">
-            <div class="row">
-                <div class="col s12 ">
-                    <ul class="tabs ">
-                        <li class="tab col l7 s3"><a href="" class = " black-text tab-link">Technical</a></li>
-                        <li class="tab col l3 s3"><a href="" class = " black-text tab-link">non-Technical</a></li>
+        <h4 ><strong> Technical Events</strong> </h4>
 
-                    </ul>
+        <div class = "row">
+<!--paper prresentatiovn-->            
+         <div class="col l4 m6 s12  imgcontainer"> 
+                 <a class="modal-trigger"  href="#ppmodal"> <img src="te/pp.jpg"  width="250" alt="" class="responsive-img  center  "> 
+                 </a>
+
+                 <div id="ppmodal" class="modal">
+                <div class="modal-content">
+                    <h4><strong>PAPER PRESENTATION </strong></h4>
+                    <h6><strong> DESCRIPTION </strong></h6>
+                    <p> 
+                    Pull on your thinking hats!</p>
+                    <p>Its time to display your ideas .</p>
+                   <p> An amazing opportunity to showcase your ideas on a unique platform in form of well integrated and alluring presentation .
+                    </p>
+
+                  <h6><strong> Rules </strong></h6>
+
+                  <ol>
+                    <li>This event welcomes both team and individual participation . </li>
+                    <li>A Team can have maximum of 3 members</li>
+                    <li> The participants are requested to submit the abstract in IEEE format . </li>
+
+                    <li> The participants are requested to submit the abstract on or before the mentioned deadline .extension of time will not be entertained .</li>
+                    <li> The selected team will be intimated through mail and whatsapp on 23.11.2021.
+                   </li>
+                    <li> The event is available in both offline and virtual mode.
+                   </li>
+                  </ol>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">close</a>
                 </div>
             </div>
+
+
+            </div>
+
+            
+            <div class="col l4 m6 s12  imgcontainer"> 
+                     <a> <img src="te/am.jpg" width="250"alt="" class="responsive-img materialboxed center">  
+                     </a>
+
+            </div>
+
+            <div class="col l4 m6 s12  imgcontainer"> 
+                     <a> <img src="te/ss.jpg" width="250"alt="" class="responsive-img materialboxed center">  
+                     </a>
+
+            </div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -116,6 +172,11 @@
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
+                $('.tabs').tabs();
+
+                    $('.modal').modal();
+
+
 
 
         })
