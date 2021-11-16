@@ -19,7 +19,8 @@
         background-color: black;
         background-size: cover;
         background-position: center;
-        min-height: 800px;
+            background-repeat: no-repeat;
+        min-height: 900px;
 
     }
 
@@ -42,17 +43,25 @@
         }
     }
 
+     @media screen and (max-width: 640px) {
+       
+
+        header .header-txt h1{
+            font-size:40px
+        }
+        header .header-txt h5{
+            font-size:20px
+        }
+        header .header-txt h3{
+            font-size:30px
+        }
+    }
+
     #events .event-headers{
 
     }
 
-    .tabs .indicator {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: black;
-    will-change: left, right;
-}
+   
 
 .tab-list-text{
     font-size:20px;
@@ -65,7 +74,7 @@
 
 <body>
 <!--Author: Keshav SR-->
-    <header>
+    <header class = "section">
         <nav class="nav-wrapper transparent z-depth-0">
             <div class="container">
                 <a href="#" class="brand-logo">
@@ -76,7 +85,7 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a class='' href='#events''> Events</a>
+                        <a class='' href='#events'> Events</a>
                     </li>
                     <li>
                         <a class='' href=' #' data-target='dropdown2'> Register</a>
@@ -85,7 +94,7 @@
                 </ul>
 
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a class='transparent' href='#events''> Events</a></li>
+                    <li><a class='transparent' href='#events'> Events</a></li>
                     <li> <a class=' dropdown-trigger transparent' href='#' data-target='dropdown2'> Register</a></li>
                 </ul>
 
@@ -192,7 +201,7 @@
 
                  <div id="pcmodal" class="modal">
                 <div class="modal-content">
-                    <h4><strong>PAPER PRESENTATION </strong></h4>
+                    <h4><strong>Pit Crew </strong></h4>
                     <h6><strong> DESCRIPTION </strong></h6>
                     <p> Who is the fastest?!</p>
                     <p> Each crew gets to disassemble and assemble the wheels.</p>
@@ -382,7 +391,7 @@
 
                  <div id="bamodal" class="modal">
                 <div class="modal-content">
-                    <h4><strong>PHOTO FURY</strong></h4>
+                    <h4><strong>Bowling AHH Fielding ahh?</strong></h4>
                     <h6><strong> DESCRIPTION </strong></h6>
                     <p> Bowling ah fielding ah?: 4 overs. You've got 4 overs to prove your team's strength. We'll be watching out for some helicopters and cover drives! Btw, Toss jeicha Bowling ah illa fielding ah?<p>
 
